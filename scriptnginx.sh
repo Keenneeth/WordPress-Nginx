@@ -5,7 +5,7 @@ cd ~
 apt install -y apt-transport-https lsb-release ca-certificates wget
 wget http://wordpress.org/latest.tar.gz
 tar -xf latest.tar.gz
-chown -R nginx:nginx /usr/share/nginx/html
+chown -R nginx:nginx /usr/share/nginx/html/*
 cp -r wordpress/* /usr/share/nginx/html/
 mkdir /usr/share/nginx/html/wp-content/uploads
 cd /usr/share/nginx/html
